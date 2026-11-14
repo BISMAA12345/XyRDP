@@ -1,6 +1,6 @@
 {
   "active": true,
-  "hostname": "rdpfree-6",
+  "hostname": "rdpfree-7",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
@@ -13,13 +13,13 @@
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-14T04:31:48Z",
-  "expires_at": "2026-11-14T10:13:48Z",
+  "started_at": "2026-11-14T07:39:17Z",
+  "expires_at": "2026-11-14T13:21:17Z",
   "duration_menit": 342,
-  "run_id": "43557046179",
+  "run_id": "43572062256",
   "run_attempt": "1",
-  "run_number": "6",
-  "run_url": "https://github.com/BISMAA12345/XyRDP/actions/runs/43557046179",
+  "run_number": "7",
+  "run_url": "https://github.com/BISMAA12345/XyRDP/actions/runs/43572062256",
   "mode": "bersih+win10",
   "runtimes": {
     "mode": "cepat",
@@ -37,14 +37,14 @@
     "vc2005x64": "dilewati (mode cepat)"
   },
   "persist": {
+    "files": 12,
     "source": "xyrdp-state.7z.enc",
     "restored": true,
-    "files": 11,
     "profile": "C:\\Users\\xyadmin"
   },
   "storage": {
-    "note": "dilewati sesuai config",
-    "boost": "skip"
+    "boost": "skip",
+    "note": "dilewati sesuai config"
   },
   "fps_boost": {
     "status": "ok",
@@ -60,66 +60,58 @@
     ],
     "skipped": [],
     "applied_count": 8,
-    "elapsed_sec": 3.4,
+    "elapsed_sec": 1.5,
     "note": "Tweak rendering RDP & scheduler OS. Tidak menaikkan FPS game 3D tanpa GPU fisik; Mesa3D/WARP tetap dipakai.",
-    "updated_at": "2026-11-14T04:31:58.6224814Z"
+    "updated_at": "2026-11-14T07:39:25.7755686Z"
   },
   "media": {
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "microphone": "rdp_capture_enabled",
-    "audio_output": "rdp_playback_enabled",
-    "wallpaper": "xyverse_configured_for_user_logon"
+    "wallpaper": "xyverse_configured_for_user_logon",
+    "audio_output": "rdp_playback_enabled"
   },
   "grafis": {
     "mode": "software",
-    "adapters": "Microsoft Hyper-V Video",
-    "vulkan": "lavapipe 1.3 (CPU)",
+    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
     "path": "C:\\XyRDP\\grafis\\mesa-x64",
     "mesa": "26.2.6",
-    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)"
+    "vulkan": "lavapipe 1.3 (CPU)",
+    "adapters": "Microsoft Hyper-V Video"
   },
   "games": {
+    "memu": {
+      "status": "ready",
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1"
+    },
+    "blender": {
+      "status": "ready",
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
+    },
+    "minecraft_java": {
+      "official_exe": true,
+      "opengl46": false,
+      "status": "ready",
+      "tlauncher_jar": true,
+      "prismlauncher": true
+    },
     "roblox": {
       "catatan": "Instalasi resmi Roblox siap. VM dapat ditolak anti-cheat Roblox; tidak ada spoofing BIOS/bypass.",
       "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
       "status": "installer_ready"
     },
-    "blender": {
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
-      "status": "ready"
-    },
-    "minecraft_java": {
-      "opengl46": false,
-      "prismlauncher": true,
-      "official_exe": true,
-      "status": "ready",
-      "tlauncher_jar": true
-    },
     "fivem": {
-      "sound": true,
-      "status": true
+      "status": true,
+      "sound": true
     },
     "ets2": {
-      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
-      "status": "ready"
-    },
-    "memu": {
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
-      "status": "ready"
+      "status": "ready",
+      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1"
     }
   },
-  "extras": {
-    "lightshot": "ok",
-    "wallpaper": "ok",
-    "wallpaper_file": "wallpaper.jpg",
-    "vscode": "skip",
-    "notepadpp": "skip",
-    "admin": false
-  },
   "tools_hub": {
+    "auto_start": true,
     "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
-    "installed": true,
-    "auto_start": true
+    "installed": true
   },
   "xydesk": {
     "host": "ok",
@@ -140,20 +132,20 @@
   },
   "akses": {
     "mode": "tailscale",
-    "tailscale": {
-      "ip": "100.75.160.42",
-      "status": "ok",
-      "hostname": "rdpfree",
-      "magicdns": "rdpfree.tailf764fc.ts.net.",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
-    },
     "tunnel": {
-      "host": "100.75.160.42",
-      "address": "100.75.160.42:3389",
-      "port": 3389,
-      "outside": "tailscale",
       "status": "ok",
-      "selftest": "ok"
+      "selftest": "ok",
+      "outside": "tailscale",
+      "port": 3389,
+      "address": "100.96.73.126:3389",
+      "host": "100.96.73.126"
+    },
+    "tailscale": {
+      "status": "ok",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "hostname": "rdpfree",
+      "ip": "100.96.73.126",
+      "magicdns": "rdpfree.tailf764fc.ts.net."
     }
   }
 }
